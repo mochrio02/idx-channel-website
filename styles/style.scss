@@ -1,0 +1,575 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  overflow-x: hidden;
+}
+
+.wrap-header-hero {
+  position: relative;
+  background-image: url(../img/background-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $primaryBgColor;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 121px;
+  padding: 0 32px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 1.09%,
+    $primaryBgColor 100%
+  );
+}
+
+.logos .logo,
+.get-ticket img {
+  height: 60px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 65px;
+
+  .main-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.main-nav-list li {
+  list-style-type: none;
+}
+
+li {
+  .main-nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: $generalColor;
+    padding: 15px 0;
+  }
+
+  .active-link {
+    font-weight: 700;
+    border-bottom: 2px solid $primaryBtnColor;
+  }
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 32px;
+  color: $generalColor;
+
+  &[name="close-outline"] {
+    display: none;
+  }
+}
+
+.section-hero {
+  padding-top: 138px;
+  padding-bottom: 126px;
+  color: $generalColor;
+
+  .hero {
+    padding: 0 32px;
+  }
+}
+
+.sub-hero {
+  width: 50%;
+}
+
+.description {
+  .first-heading {
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .sub-heading {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .text-p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+
+    &:first-of-type {
+      margin-top: 16px;
+    }
+
+    &:last-of-type {
+      margin-top: 25px;
+    }
+  }
+}
+
+.lokasi-jadwal {
+  margin-top: 48px;
+  display: flex;
+  gap: 15px;
+}
+
+.lokasi .icon-lokasi,
+.jadwal .icon-jadwal {
+  font-size: 18px;
+  color: $primaryBtnColor;
+}
+
+.lokasi-text,
+.jadwal-text {
+  font-size: 18px;
+}
+
+.lokasi-text span,
+.jadwal-text span {
+  font-weight: 700;
+}
+
+.lokasi-text p,
+.jadwal-text p {
+  font-weight: 400;
+  margin-top: 5px;
+  line-height: 25.2px;
+}
+
+.lokasi,
+.jadwal {
+  display: flex;
+  gap: 16px;
+}
+
+.wa-side {
+  background: $generalColor;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+
+  img {
+    width: 36px;
+  }
+}
+
+.section-tournament-format {
+  background: $primaryBgColor;
+  color: $generalColor;
+  padding-top: 133px;
+}
+
+.tournament-format-top {
+  .second-heading {
+    font-size: 32px;
+    font-weight: 800;
+    color: $secondaryBgColor;
+    text-align: center;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .box-card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+}
+
+.img-tournament-format img {
+  width: 395px;
+}
+
+.text-tournament-format {
+  margin-top: 16px;
+
+  span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .text-list {
+    margin-top: 16px;
+    margin-left: 29px;
+    font-size: 20px;
+
+    li:last-of-type {
+      margin-top: 16px;
+    }
+  }
+}
+
+.tournament-format-bottom {
+  margin-top: 96px;
+}
+
+.formats {
+  background: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.img-format {
+  text-align: center;
+
+  img {
+    width: 48px;
+  }
+}
+
+.text-format {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  color: $primaryBgColor;
+}
+
+.section-grand-prize {
+  padding-top: 133px;
+  padding-bottom: 12px;
+  background: $primaryBgColor;
+  color: $generalColor;
+  background-image: url(img/bg-black-trans.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.grand-prize {
+  padding: 0 32px;
+
+  .second-heading {
+    color: $secondaryBgColor;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .prize-box-top {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.prize-box-top .prize {
+  padding: 8px 16px;
+  border-right: 1px solid $generalColor;
+  font-size: 20px;
+  font-weight: 400;
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.img-car img {
+  width: 100%;
+}
+
+.hole-in-one {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  img {
+    width: 48px;
+  }
+
+  .sub-heading {
+    font-size: 48px;
+    font-weight: 800;
+    color: $txtHolInOneColor;
+  }
+}
+
+.grand-prize .prize-box-bottom {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.prize-box-bottom .prize {
+  padding: 8px 16px;
+  border-right: 1px solid $generalColor;
+  font-size: 24px;
+  font-weight: 700;
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.section-previous-tournament {
+  padding-top: 133px;
+  padding-bottom: 42px;
+  background: $tertiaryBgColor;
+  color: $primaryBgColor;
+
+  .second-heading {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .media-tabs {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.media-tabs {
+  .tab {
+    border: none;
+    cursor: pointer;
+    background: $tertiaryBgColor;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-right: 1px solid $primaryBgColor;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  .active-tab {
+    background: $primaryBtnColor;
+    color: $generalColor;
+    border: none;
+  }
+}
+
+.section-previous-tournament .media-container {
+  margin-top: 24px;
+  background: $generalColor;
+  width: 100%;
+  padding: 24px;
+}
+
+.media-container .media {
+  display: none;
+}
+
+.media-foto .media-foto-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  list-style-type: none;
+  scroll-snap-type: x;
+  cursor: grab;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.media-foto-container {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    width: 395px;
+    scroll-snap-align: start;
+    user-select: none;
+  }
+}
+
+.btn-back-forw-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $secondaryBtnColor;
+    font-size: 42px;
+  }
+
+  .active-btn {
+    color: $primaryBtnColor;
+  }
+}
+
+.media-container .active-media {
+  display: block;
+}
+
+.media-video {
+  text-align: center;
+
+  .video {
+    width: 700px;
+    height: 395px;
+  }
+}
+
+.section-ticket {
+  padding-top: 133px;
+  padding-bottom: 100px;
+  background-image: url(../img/background-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: $generalColor;
+  position: relative;
+}
+
+.ticket {
+  padding: 0 32px;
+
+  .second-heading {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .text-p {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.button-get-ticket {
+  margin-top: 120px;
+  text-align: center;
+
+  .btn-get {
+    padding: 28px 75px;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    border-radius: 8px;
+    background: $primaryBtnColor;
+  }
+}
+
+.more-info {
+  margin-top: 159px;
+  color: $secondaryBgColor;
+
+  .sub-heading {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.email-wa {
+  margin-top: 8px;
+  display: flex;
+  gap: 150px;
+
+  .email,
+  .whatsapp {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.email div:last-of-type,
+.whatsapp div:last-of-type {
+  margin-top: 4px;
+}
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 29px;
+  background: $footerBgColor;
+  color: $primaryBgColor;
+  font-family: "Figtree", sans-serif;
+}
+
+.sponsor {
+  padding: 0 32px;
+
+  .second-heading {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .sponsor-box {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sponsor-box .box {
+  width: 124px;
+  height: 124px;
+  border: 1px solid $secondaryBgColor;
+}
+
+.copyright {
+  margin-top: 100px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .media-social-ul {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+  }
+}
+
+.media-social-ul .footer-link {
+  color: $iconSmColor;
+}
+
+.media-social-icon {
+  font-size: 30px;
+}
+
+@import "./media-query";
